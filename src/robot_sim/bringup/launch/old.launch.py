@@ -47,7 +47,7 @@ def generate_launch_description():
         launch_arguments={'gz_args': PathJoinSubstitution([
             pkg_project_gazebo,
             'worlds',
-            'diff_drive.sdf'
+            'diff_drive_world.sdf'
         ])}.items(),
     )
 

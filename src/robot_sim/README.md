@@ -47,7 +47,7 @@ sudo apt install python3-vcstool python3-colcon-common-extensions git wget
 1. Launch the simulation
 
     ```bash
-    ros2 launch ros_gz_example_bringup diff_drive.launch.py
+    ros2 launch bringup diff_drive.launch.py
     ```
 
 For a more detailed guide on using this template see [documentation](https://gazebosim.org/docs/latest/ros_gz_project_template_guide).

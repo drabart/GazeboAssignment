@@ -80,7 +80,7 @@
       <self_collide>true</self_collide>
       <pose>0 0 0.35 0 0 0</pose>
       <include merge="true">
-        <uri>package://ros_gz_example_description/models/diff_drive</uri>
+        <uri>package://model_description/models/diff_drive</uri>
       </include>
 
       <plugin

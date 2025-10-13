@@ -1,0 +1,2186 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/1ee3e8e7d3bff65cb341bad5/w/8a5c6caf79ebbf20381a9b9a/e/01657f070dd481dff05bd6b4 -->
+<sdf version="1.7">
+  <model name="base_plate">
+    <!-- Link plate -->
+    <link name="plate">
+      <inertial>
+        <pose>-0.0227544 -0.0312375 -0.128505 0 0 0</pose>
+        <mass>0.218405</mass>
+        <inertia>
+          <ixx>0.00193702</ixx>
+          <ixy>0.000221952</ixy>
+          <ixz>0.000650792</ixz>
+          <iyy>0.00283623</iyy>
+          <iyz>-2.3614e-05</iyz>
+          <izz>0.00143215</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part plate -->
+      <visual name="plate_visual_mesh_1">
+        <pose relative_to="plate">7.65404e-18 0 0 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/plate.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.615686 0.811765 0.929412 1</ambient>
+          <diffuse>0.615686 0.811765 0.929412 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="plate_collision_mesh_2">
+        <pose relative_to="plate">7.65404e-18 0 0 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/plate.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_visual_mesh_1">
+        <pose relative_to="plate">-0.266078 0.0134 0.0225 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_collision_mesh_2">
+        <pose relative_to="plate">-0.266078 0.0134 0.0225 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_2 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_2_visual_mesh_1">
+        <pose relative_to="plate">-0.266078 0.0134 -0.0225 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_2_collision_mesh_2">
+        <pose relative_to="plate">-0.266078 0.0134 -0.0225 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_visual_mesh_1">
+        <pose relative_to="plate">-0.0225 -0.005 -0.266078 1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_collision_mesh_2">
+        <pose relative_to="plate">-0.0225 -0.005 -0.266078 1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_3 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_3_visual_mesh_1">
+        <pose relative_to="plate">-0.173078 0.0134 -0.0225 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_3_collision_mesh_2">
+        <pose relative_to="plate">-0.173078 0.0134 -0.0225 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_4 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_4_visual_mesh_1">
+        <pose relative_to="plate">-0.173078 0.0134 0.0225 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_4_collision_mesh_2">
+        <pose relative_to="plate">-0.173078 0.0134 0.0225 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_2 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_2_visual_mesh_1">
+        <pose relative_to="plate">0.0225 -0.005 -0.173078 1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_2_collision_mesh_2">
+        <pose relative_to="plate">0.0225 -0.005 -0.173078 1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_3 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_3_visual_mesh_1">
+        <pose relative_to="plate">0.0225 -0.005 -0.266078 1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_3_collision_mesh_2">
+        <pose relative_to="plate">0.0225 -0.005 -0.266078 1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_4 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_4_visual_mesh_1">
+        <pose relative_to="plate">-0.0225 -0.005 -0.173078 1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_4_collision_mesh_2">
+        <pose relative_to="plate">-0.0225 -0.005 -0.173078 1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 186117_qsl_g1_8_6 -->
+      <visual name="186117_qsl_g1_8_6_visual_mesh_1">
+        <pose relative_to="plate">0.008 -0.07775 -0.273878 -3.14159 7.12763e-14 1.67618e-15</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="186117_qsl_g1_8_6_collision_mesh_2">
+        <pose relative_to="plate">0.008 -0.07775 -0.273878 -3.14159 7.12763e-14 1.67618e-15</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 186117_qsl_g1_8_6_2 -->
+      <visual name="186117_qsl_g1_8_6_2_visual_mesh_1">
+        <pose relative_to="plate">-0.008 -0.07775 -0.165278 -3.14159 7.12763e-14 1.67618e-15</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="186117_qsl_g1_8_6_2_collision_mesh_2">
+        <pose relative_to="plate">-0.008 -0.07775 -0.165278 -3.14159 7.12763e-14 1.67618e-15</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part din_439_b___m12x1_25_f -->
+      <visual name="din_439_b___m12x1_25_f_visual_mesh_1">
+        <pose relative_to="plate">9.78969e-15 -0.045 -0.0785688 1.5708 7.09779e-14 3.60139e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="din_439_b___m12x1_25_f_collision_mesh_2">
+        <pose relative_to="plate">9.78969e-15 -0.045 -0.0785688 1.5708 7.09779e-14 3.60139e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part gripper_cup -->
+      <visual name="gripper_cup_visual_mesh_1">
+        <pose relative_to="plate">1.50357e-14 -0.015 -0.00556881 1.5708 -0.719948 4.37423e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/gripper_cup.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.615686 0.811765 0.929412 1</ambient>
+          <diffuse>0.615686 0.811765 0.929412 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="gripper_cup_collision_mesh_2">
+        <pose relative_to="plate">1.50357e-14 -0.015 -0.00556881 1.5708 -0.719948 4.37423e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/gripper_cup.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 537243_hna_50____1 -->
+      <visual name="537243_hna_50____1_visual_mesh_1">
+        <pose relative_to="plate">6.93889e-18 -1.27513e-42 -0.287078 -3.14159 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="537243_hna_50____1_collision_mesh_2">
+        <pose relative_to="plate">6.93889e-18 -1.27513e-42 -0.287078 -3.14159 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 537243_hna_50____1_2 -->
+      <visual name="537243_hna_50____1_2_visual_mesh_1">
+        <pose relative_to="plate">4.39232e-15 2.26861e-31 -0.152078 -3.14159 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="537243_hna_50____1_2_collision_mesh_2">
+        <pose relative_to="plate">4.39232e-15 2.26861e-31 -0.152078 -3.14159 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part din_439_b___m12x1_25_f_2 -->
+      <visual name="din_439_b___m12x1_25_f_2_visual_mesh_1">
+        <pose relative_to="plate">8.94629e-15 -0.045 -0.0905688 1.5708 -2.1155e-28 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="din_439_b___m12x1_25_f_2_collision_mesh_2">
+        <pose relative_to="plate">8.94629e-15 -0.045 -0.0905688 1.5708 -2.1155e-28 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 536309_adn_80_p____z -->
+      <visual name="536309_adn_80_p____z_visual_mesh_1">
+        <pose relative_to="plate">4.20744e-15 -0.045 -0.157078 -7.12763e-14 -5.87621e-16 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p____z.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.74902 0.74902 0.74902 1</ambient>
+          <diffuse>0.74902 0.74902 0.74902 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="536309_adn_80_p____z_collision_mesh_2">
+        <pose relative_to="plate">4.20744e-15 -0.045 -0.157078 -7.12763e-14 -5.87621e-16 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p____z.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 536309_adn_80_p_a__ks -->
+      <visual name="536309_adn_80_p_a__ks_visual_mesh_1">
+        <pose relative_to="plate">7.65846e-15 -0.045 -0.108548 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p_a__ks.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.74902 0.74902 0.74902 1</ambient>
+          <diffuse>0.74902 0.74902 0.74902 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="536309_adn_80_p_a__ks_collision_mesh_2">
+        <pose relative_to="plate">7.65846e-15 -0.045 -0.108548 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p_a__ks.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link 537243_hna_50____125 -->
+    <link name="537243_hna_50____125">
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1e-09</mass>
+        <inertia>
+          <ixx>1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1e-09</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part 537243_hna_50____1_3 -->
+      <visual name="537243_hna_50____1_3_visual_mesh_1">
+        <pose relative_to="537243_hna_50____125">0.287078 -1.22364e-42 -9.72105e-18 -4.11642e-41 -6.12323e-17 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="537243_hna_50____1_3_collision_mesh_2">
+        <pose relative_to="537243_hna_50____125">0.287078 -1.22364e-42 -9.72105e-18 -4.11642e-41 -6.12323e-17 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 537243_hna_50____1_4 -->
+      <visual name="537243_hna_50____1_4_visual_mesh_1">
+        <pose relative_to="537243_hna_50____125">0.152078 2.26861e-31 4.38393e-15 -3.14159 7.10045e-14 -3.77307e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="537243_hna_50____1_4_collision_mesh_2">
+        <pose relative_to="537243_hna_50____125">0.152078 2.26861e-31 4.38393e-15 -3.14159 7.10045e-14 -3.77307e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link 537243_hna_50____125_2 -->
+    <link name="537243_hna_50____125_2">
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1e-09</mass>
+        <inertia>
+          <ixx>1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1e-09</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part 537243_hna_50____1_5 -->
+      <visual name="537243_hna_50____1_5_visual_mesh_1">
+        <pose relative_to="537243_hna_50____125_2">2.6381e-17 -1.17214e-42 0.287078 -3.14159 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="537243_hna_50____1_5_collision_mesh_2">
+        <pose relative_to="537243_hna_50____125_2">2.6381e-17 -1.17214e-42 0.287078 -3.14159 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 537243_hna_50____1_6 -->
+      <visual name="537243_hna_50____1_6_visual_mesh_1">
+        <pose relative_to="537243_hna_50____125_2">-4.37553e-15 2.26861e-31 0.152078 -3.14159 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="537243_hna_50____1_6_collision_mesh_2">
+        <pose relative_to="537243_hna_50____125_2">-4.37553e-15 2.26861e-31 0.152078 -3.14159 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link 537243_hna_50____125_3 -->
+    <link name="537243_hna_50____125_3">
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1e-09</mass>
+        <inertia>
+          <ixx>1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1e-09</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part 537243_hna_50____1_7 -->
+      <visual name="537243_hna_50____1_7_visual_mesh_1">
+        <pose relative_to="537243_hna_50____125_3">-0.287078 -1.22364e-42 4.48779e-17 3.14159 1.83697e-16 -2.81976e-43</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="537243_hna_50____1_7_collision_mesh_2">
+        <pose relative_to="537243_hna_50____125_3">-0.287078 -1.22364e-42 4.48779e-17 3.14159 1.83697e-16 -2.81976e-43</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 537243_hna_50____1_8 -->
+      <visual name="537243_hna_50____1_8_visual_mesh_1">
+        <pose relative_to="537243_hna_50____125_3">-0.152078 2.26861e-31 -4.3653e-15 6.47409e-29 -7.11269e-14 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="537243_hna_50____1_8_collision_mesh_2">
+        <pose relative_to="537243_hna_50____125_3">-0.152078 2.26861e-31 -4.3653e-15 6.47409e-29 -7.11269e-14 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/537243_hna_50____1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link gripper_piston_cup_assembly -->
+    <link name="gripper_piston_cup_assembly">
+      <inertial>
+        <pose>0.0765767 -0.045 -2.27919e-07 0 0 0</pose>
+        <mass>0.105319</mass>
+        <inertia>
+          <ixx>0.000137118</ixx>
+          <ixy>1.61779e-12</ixy>
+          <ixz>2.16116e-10</ixz>
+          <iyy>0.000109448</iyy>
+          <iyz>-3.75417e-11</iyz>
+          <izz>3.82859e-05</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part din_439_b___m12x1_25_f_3 -->
+      <visual name="din_439_b___m12x1_25_f_3_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly">0.0785688 -0.045 9.78498e-15 1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="din_439_b___m12x1_25_f_3_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly">0.0785688 -0.045 9.78498e-15 1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part gripper_cup_2 -->
+      <visual name="gripper_cup_2_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly">0.00556881 -0.015 1.50355e-14 -1.5708 -0.850848 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/gripper_cup.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.615686 0.811765 0.929412 1</ambient>
+          <diffuse>0.615686 0.811765 0.929412 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="gripper_cup_2_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly">0.00556881 -0.015 1.50355e-14 -1.5708 -0.850848 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/gripper_cup.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part din_439_b___m12x1_25_f_4 -->
+      <visual name="din_439_b___m12x1_25_f_4_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly">0.0905688 -0.045 8.94084e-15 3.14159 -2.6486e-31 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="din_439_b___m12x1_25_f_4_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly">0.0905688 -0.045 8.94084e-15 3.14159 -2.6486e-31 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 536309_adn_80_p____z_2 -->
+      <visual name="536309_adn_80_p____z_2_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly">0.157078 -0.045 4.19874e-15 1.5708 -1.2507e-28 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p____z.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.74902 0.74902 0.74902 1</ambient>
+          <diffuse>0.74902 0.74902 0.74902 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="536309_adn_80_p____z_2_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly">0.157078 -0.045 4.19874e-15 1.5708 -1.2507e-28 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p____z.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 536309_adn_80_p_a__ks_2 -->
+      <visual name="536309_adn_80_p_a__ks_2_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly">0.108548 -0.045 7.65191e-15 -1.5708 7.15041e-14 5.84378e-43</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p_a__ks.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.74902 0.74902 0.74902 1</ambient>
+          <diffuse>0.74902 0.74902 0.74902 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="536309_adn_80_p_a__ks_2_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly">0.108548 -0.045 7.65191e-15 -1.5708 7.15041e-14 5.84378e-43</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p_a__ks.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link gripper_piston_cup_assembly_2 -->
+    <link name="gripper_piston_cup_assembly_2">
+      <inertial>
+        <pose>2.27919e-07 -0.045 0.0765767 0 0 0</pose>
+        <mass>0.105319</mass>
+        <inertia>
+          <ixx>3.82859e-05</ixx>
+          <ixy>3.75417e-11</ixy>
+          <ixz>-2.16116e-10</ixz>
+          <iyy>0.000109448</iyy>
+          <iyz>1.61779e-12</iyz>
+          <izz>0.000137118</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part din_439_b___m12x1_25_f_5 -->
+      <visual name="din_439_b___m12x1_25_f_5_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly_2">-9.78007e-15 -0.045 0.0785688 -1.5708 -7.127e-14 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="din_439_b___m12x1_25_f_5_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly_2">-9.78007e-15 -0.045 0.0785688 -1.5708 -7.127e-14 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part gripper_cup_3 -->
+      <visual name="gripper_cup_3_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly_2">-1.50351e-14 -0.015 0.00556881 -1.5708 0.719948 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/gripper_cup.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.615686 0.811765 0.929412 1</ambient>
+          <diffuse>0.615686 0.811765 0.929412 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="gripper_cup_3_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly_2">-1.50351e-14 -0.015 0.00556881 -1.5708 0.719948 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/gripper_cup.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part din_439_b___m12x1_25_f_6 -->
+      <visual name="din_439_b___m12x1_25_f_6_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly_2">-8.93519e-15 -0.045 0.0905688 -1.5708 1.04894e-27 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="din_439_b___m12x1_25_f_6_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly_2">-8.93519e-15 -0.045 0.0905688 -1.5708 1.04894e-27 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 536309_adn_80_p____z_3 -->
+      <visual name="536309_adn_80_p____z_3_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly_2">-4.19004e-15 -0.045 0.157078 3.14159 5.87621e-16 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p____z.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.74902 0.74902 0.74902 1</ambient>
+          <diffuse>0.74902 0.74902 0.74902 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="536309_adn_80_p____z_3_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly_2">-4.19004e-15 -0.045 0.157078 3.14159 5.87621e-16 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p____z.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 536309_adn_80_p_a__ks_3 -->
+      <visual name="536309_adn_80_p_a__ks_3_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly_2">-7.64516e-15 -0.045 0.108548 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p_a__ks.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.74902 0.74902 0.74902 1</ambient>
+          <diffuse>0.74902 0.74902 0.74902 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="536309_adn_80_p_a__ks_3_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly_2">-7.64516e-15 -0.045 0.108548 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p_a__ks.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link gripper_piston_cup_assembly_3 -->
+    <link name="gripper_piston_cup_assembly_3">
+      <inertial>
+        <pose>-0.0765767 -0.045 2.27919e-07 0 0 0</pose>
+        <mass>0.105319</mass>
+        <inertia>
+          <ixx>0.000137118</ixx>
+          <ixy>-1.61779e-12</ixy>
+          <ixz>2.16116e-10</ixz>
+          <iyy>0.000109448</iyy>
+          <iyz>3.75417e-11</iyz>
+          <izz>3.82859e-05</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part din_439_b___m12x1_25_f_7 -->
+      <visual name="din_439_b___m12x1_25_f_7_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly_3">-0.0785688 -0.045 -9.77515e-15 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="din_439_b___m12x1_25_f_7_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly_3">-0.0785688 -0.045 -9.77515e-15 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part gripper_cup_4 -->
+      <visual name="gripper_cup_4_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly_3">-0.00556881 -0.015 -1.50346e-14 1.5708 0.850848 4.98786e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/gripper_cup.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.615686 0.811765 0.929412 1</ambient>
+          <diffuse>0.615686 0.811765 0.929412 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="gripper_cup_4_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly_3">-0.00556881 -0.015 -1.50346e-14 1.5708 0.850848 4.98786e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/gripper_cup.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part din_439_b___m12x1_25_f_8 -->
+      <visual name="din_439_b___m12x1_25_f_8_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly_3">-0.0905688 -0.045 -8.92955e-15 -7.15155e-14 7.94579e-31 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="din_439_b___m12x1_25_f_8_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly_3">-0.0905688 -0.045 -8.92955e-15 -7.15155e-14 7.94579e-31 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/din_439_b___m12x1_25_f.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 536309_adn_80_p____z_4 -->
+      <visual name="536309_adn_80_p____z_4_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly_3">-0.157078 -0.045 -4.17951e-15 -1.5708 1.25142e-28 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p____z.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.74902 0.74902 0.74902 1</ambient>
+          <diffuse>0.74902 0.74902 0.74902 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="536309_adn_80_p____z_4_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly_3">-0.157078 -0.045 -4.17951e-15 -1.5708 1.25142e-28 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p____z.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Part 536309_adn_80_p_a__ks_4 -->
+      <visual name="536309_adn_80_p_a__ks_4_visual_mesh_1">
+        <pose relative_to="gripper_piston_cup_assembly_3">-0.108548 -0.045 -7.63842e-15 1.5708 -7.16265e-14 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p_a__ks.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.74902 0.74902 0.74902 1</ambient>
+          <diffuse>0.74902 0.74902 0.74902 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="536309_adn_80_p_a__ks_4_collision_mesh_2">
+        <pose relative_to="gripper_piston_cup_assembly_3">-0.108548 -0.045 -7.63842e-15 1.5708 -7.16265e-14 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/536309_adn_80_p_a__ks.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link 186117_qsl_g1_8_6 -->
+    <link name="186117_qsl_g1_8_6">
+      <inertial>
+        <pose>0.170268 -0.0890578 -0.008 0 0 0</pose>
+        <mass>0.014</mass>
+        <inertia>
+          <ixx>8.99905e-07</ixx>
+          <ixy>4.27099e-07</ixy>
+          <ixz>-3.92672e-15</ixz>
+          <iyy>7.93552e-07</iyy>
+          <iyz>1.89238e-15</iyz>
+          <izz>1.39817e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part 186117_qsl_g1_8_6_3 -->
+      <visual name="186117_qsl_g1_8_6_3_visual_mesh_1">
+        <pose relative_to="186117_qsl_g1_8_6">0.165278 -0.07775 -0.008 -3.14159 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="186117_qsl_g1_8_6_3_collision_mesh_2">
+        <pose relative_to="186117_qsl_g1_8_6">0.165278 -0.07775 -0.008 -3.14159 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link 186117_qsl_g1_8_6_2 -->
+    <link name="186117_qsl_g1_8_6_2">
+      <inertial>
+        <pose>0.008 -0.0890578 0.170268 0 0 0</pose>
+        <mass>0.014</mass>
+        <inertia>
+          <ixx>1.39817e-06</ixx>
+          <ixy>-1.89238e-15</ixy>
+          <ixz>3.92672e-15</ixz>
+          <iyy>7.93552e-07</iyy>
+          <iyz>4.27099e-07</iyz>
+          <izz>8.99905e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part 186117_qsl_g1_8_6_4 -->
+      <visual name="186117_qsl_g1_8_6_4_visual_mesh_1">
+        <pose relative_to="186117_qsl_g1_8_6_2">0.008 -0.07775 0.165278 1.70508e-28 -7.13988e-14 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="186117_qsl_g1_8_6_4_collision_mesh_2">
+        <pose relative_to="186117_qsl_g1_8_6_2">0.008 -0.07775 0.165278 1.70508e-28 -7.13988e-14 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link 186117_qsl_g1_8_6_3 -->
+    <link name="186117_qsl_g1_8_6_3">
+      <inertial>
+        <pose>-0.170268 -0.0890578 0.008 0 0 0</pose>
+        <mass>0.014</mass>
+        <inertia>
+          <ixx>8.99905e-07</ixx>
+          <ixy>-4.27099e-07</ixy>
+          <ixz>-3.92672e-15</ixz>
+          <iyy>7.93552e-07</iyy>
+          <iyz>-1.89238e-15</iyz>
+          <izz>1.39817e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part 186117_qsl_g1_8_6_5 -->
+      <visual name="186117_qsl_g1_8_6_5_visual_mesh_1">
+        <pose relative_to="186117_qsl_g1_8_6_3">-0.165278 -0.07775 0.008 -3.14159 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="186117_qsl_g1_8_6_5_collision_mesh_2">
+        <pose relative_to="186117_qsl_g1_8_6_3">-0.165278 -0.07775 0.008 -3.14159 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link 186117_qsl_g1_8_6_4 -->
+    <link name="186117_qsl_g1_8_6_4">
+      <inertial>
+        <pose>0.278868 -0.0890578 0.008 0 0 0</pose>
+        <mass>0.014</mass>
+        <inertia>
+          <ixx>8.99905e-07</ixx>
+          <ixy>4.27099e-07</ixy>
+          <ixz>-3.92672e-15</ixz>
+          <iyy>7.93552e-07</iyy>
+          <iyz>1.89238e-15</iyz>
+          <izz>1.39817e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part 186117_qsl_g1_8_6_6 -->
+      <visual name="186117_qsl_g1_8_6_6_visual_mesh_1">
+        <pose relative_to="186117_qsl_g1_8_6_4">0.273878 -0.07775 0.008 -3.14159 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="186117_qsl_g1_8_6_6_collision_mesh_2">
+        <pose relative_to="186117_qsl_g1_8_6_4">0.273878 -0.07775 0.008 -3.14159 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link 186117_qsl_g1_8_6_5 -->
+    <link name="186117_qsl_g1_8_6_5">
+      <inertial>
+        <pose>-0.008 -0.0890578 0.278868 0 0 0</pose>
+        <mass>0.014</mass>
+        <inertia>
+          <ixx>1.39817e-06</ixx>
+          <ixy>-1.89238e-15</ixy>
+          <ixz>3.92672e-15</ixz>
+          <iyy>7.93552e-07</iyy>
+          <iyz>4.27099e-07</iyz>
+          <izz>8.99905e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part 186117_qsl_g1_8_6_7 -->
+      <visual name="186117_qsl_g1_8_6_7_visual_mesh_1">
+        <pose relative_to="186117_qsl_g1_8_6_5">-0.008 -0.07775 0.273878 1.70508e-28 -7.13988e-14 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="186117_qsl_g1_8_6_7_collision_mesh_2">
+        <pose relative_to="186117_qsl_g1_8_6_5">-0.008 -0.07775 0.273878 1.70508e-28 -7.13988e-14 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link 186117_qsl_g1_8_6_6 -->
+    <link name="186117_qsl_g1_8_6_6">
+      <inertial>
+        <pose>-0.278868 -0.0890578 -0.008 0 0 0</pose>
+        <mass>0.014</mass>
+        <inertia>
+          <ixx>8.99905e-07</ixx>
+          <ixy>-4.27099e-07</ixy>
+          <ixz>-3.92672e-15</ixz>
+          <iyy>7.93552e-07</iyy>
+          <iyz>-1.89238e-15</iyz>
+          <izz>1.39817e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part 186117_qsl_g1_8_6_8 -->
+      <visual name="186117_qsl_g1_8_6_8_visual_mesh_1">
+        <pose relative_to="186117_qsl_g1_8_6_6">-0.273878 -0.07775 -0.008 -3.14159 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.690196 0.690196 0.690196 1</ambient>
+          <diffuse>0.690196 0.690196 0.690196 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="186117_qsl_g1_8_6_8_collision_mesh_2">
+        <pose relative_to="186117_qsl_g1_8_6_6">-0.273878 -0.07775 -0.008 -3.14159 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/186117_qsl_g1_8_6.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a -->
+    <link name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a">
+      <inertial>
+        <pose>0.266078 0.00170858 0.0225 0 0 0</pose>
+        <mass>0.0156134</mass>
+        <inertia>
+          <ixx>1.46079e-06</ixx>
+          <ixy>-1.51401e-13</ixy>
+          <ixz>1.54033e-14</ixz>
+          <iyy>2.14416e-07</iyy>
+          <iyz>9.27055e-30</iyz>
+          <izz>1.46079e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_5 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_5_visual_mesh_1">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a">0.266078 -0.005 0.0225 -1.5708 -6.12323e-17 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_5_collision_mesh_2">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a">0.266078 -0.005 0.0225 -1.5708 -6.12323e-17 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_2 -->
+    <link name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_2">
+      <inertial>
+        <pose>-0.0225 0.00170858 0.266078 0 0 0</pose>
+        <mass>0.0156134</mass>
+        <inertia>
+          <ixx>1.46079e-06</ixx>
+          <ixy>-1.85412e-29</ixy>
+          <ixz>-1.54033e-14</ixz>
+          <iyy>2.14416e-07</iyy>
+          <iyz>-1.51401e-13</iyz>
+          <izz>1.46079e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_6 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_6_visual_mesh_1">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_2">-0.0225 -0.005 0.266078 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_6_collision_mesh_2">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_2">-0.0225 -0.005 0.266078 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_3 -->
+    <link name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_3">
+      <inertial>
+        <pose>-0.266078 0.00170858 -0.0225 0 0 0</pose>
+        <mass>0.0156134</mass>
+        <inertia>
+          <ixx>1.46079e-06</ixx>
+          <ixy>1.51401e-13</ixy>
+          <ixz>1.54033e-14</ixz>
+          <iyy>2.14416e-07</iyy>
+          <iyz>-2.78119e-29</iyz>
+          <izz>1.46079e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_7 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_7_visual_mesh_1">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_3">-0.266078 -0.005 -0.0225 1.5708 1.83697e-16 -4.81146e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_7_collision_mesh_2">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_3">-0.266078 -0.005 -0.0225 1.5708 1.83697e-16 -4.81146e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_4 -->
+    <link name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_4">
+      <inertial>
+        <pose>0.173078 0.00170858 0.0225 0 0 0</pose>
+        <mass>0.0156134</mass>
+        <inertia>
+          <ixx>1.46079e-06</ixx>
+          <ixy>-1.51401e-13</ixy>
+          <ixz>1.54033e-14</ixz>
+          <iyy>2.14416e-07</iyy>
+          <iyz>1.07502e-26</iyz>
+          <izz>1.46079e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_8 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_8_visual_mesh_1">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_4">0.173078 -0.005 0.0225 -1.5708 -7.10045e-14 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_8_collision_mesh_2">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_4">0.173078 -0.005 0.0225 -1.5708 -7.10045e-14 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_5 -->
+    <link name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_5">
+      <inertial>
+        <pose>-0.0225 0.00170858 0.173078 0 0 0</pose>
+        <mass>0.0156134</mass>
+        <inertia>
+          <ixx>1.46079e-06</ixx>
+          <ixy>-1.07594e-26</ixy>
+          <ixz>-1.54033e-14</ixz>
+          <iyy>2.14416e-07</iyy>
+          <iyz>-1.51401e-13</iyz>
+          <izz>1.46079e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_9 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_9_visual_mesh_1">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_5">-0.0225 -0.005 0.173078 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_9_collision_mesh_2">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_5">-0.0225 -0.005 0.173078 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_6 -->
+    <link name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_6">
+      <inertial>
+        <pose>-0.173078 0.00170858 -0.0225 0 0 0</pose>
+        <mass>0.0156134</mass>
+        <inertia>
+          <ixx>1.46079e-06</ixx>
+          <ixy>1.51401e-13</ixy>
+          <ixz>1.54033e-14</ixz>
+          <iyy>2.14416e-07</iyy>
+          <iyz>-1.07687e-26</iyz>
+          <izz>1.46079e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_10 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_10_visual_mesh_1">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_6">-0.173078 -0.005 -0.0225 1.5708 7.11269e-14 -7.14946e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_10_collision_mesh_2">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_6">-0.173078 -0.005 -0.0225 1.5708 7.11269e-14 -7.14946e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_7 -->
+    <link name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_7">
+      <inertial>
+        <pose>0.173078 0.00170858 -0.0225 0 0 0</pose>
+        <mass>0.0156134</mass>
+        <inertia>
+          <ixx>1.46079e-06</ixx>
+          <ixy>-1.51401e-13</ixy>
+          <ixz>1.54033e-14</ixz>
+          <iyy>2.14416e-07</iyy>
+          <iyz>1.07502e-26</iyz>
+          <izz>1.46079e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_11 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_11_visual_mesh_1">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_7">0.173078 -0.005 -0.0225 -1.5708 -7.10045e-14 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_11_collision_mesh_2">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_7">0.173078 -0.005 -0.0225 -1.5708 -7.10045e-14 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_8 -->
+    <link name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_8">
+      <inertial>
+        <pose>0.0225 0.00170858 0.173078 0 0 0</pose>
+        <mass>0.0156134</mass>
+        <inertia>
+          <ixx>1.46079e-06</ixx>
+          <ixy>-1.07594e-26</ixy>
+          <ixz>-1.54033e-14</ixz>
+          <iyy>2.14416e-07</iyy>
+          <iyz>-1.51401e-13</iyz>
+          <izz>1.46079e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_12 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_12_visual_mesh_1">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_8">0.0225 -0.005 0.173078 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_12_collision_mesh_2">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_8">0.0225 -0.005 0.173078 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_9 -->
+    <link name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_9">
+      <inertial>
+        <pose>-0.173078 0.00170858 0.0225 0 0 0</pose>
+        <mass>0.0156134</mass>
+        <inertia>
+          <ixx>1.46079e-06</ixx>
+          <ixy>1.51401e-13</ixy>
+          <ixz>1.54033e-14</ixz>
+          <iyy>2.14416e-07</iyy>
+          <iyz>-1.26875e-22</iyz>
+          <izz>1.46079e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_13 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_13_visual_mesh_1">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_9">-0.173078 -0.005 0.0225 1.5708 4.18314e-16 -7.44602e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_13_collision_mesh_2">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_9">-0.173078 -0.005 0.0225 1.5708 4.18314e-16 -7.44602e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_10 -->
+    <link name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_10">
+      <inertial>
+        <pose>0.266078 0.00170858 -0.0225 0 0 0</pose>
+        <mass>0.0156134</mass>
+        <inertia>
+          <ixx>1.46079e-06</ixx>
+          <ixy>-1.51401e-13</ixy>
+          <ixz>1.54033e-14</ixz>
+          <iyy>2.14416e-07</iyy>
+          <iyz>9.27055e-30</iyz>
+          <izz>1.46079e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_14 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_14_visual_mesh_1">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_10">0.266078 -0.005 -0.0225 -1.5708 -6.12323e-17 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_14_collision_mesh_2">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_10">0.266078 -0.005 -0.0225 -1.5708 -6.12323e-17 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_11 -->
+    <link name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_11">
+      <inertial>
+        <pose>0.0225 0.00170858 0.266078 0 0 0</pose>
+        <mass>0.0156134</mass>
+        <inertia>
+          <ixx>1.46079e-06</ixx>
+          <ixy>-1.85412e-29</ixy>
+          <ixz>-1.54033e-14</ixz>
+          <iyy>2.14416e-07</iyy>
+          <iyz>-1.51401e-13</iyz>
+          <izz>1.46079e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_15 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_15_visual_mesh_1">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_11">0.0225 -0.005 0.266078 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_15_collision_mesh_2">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_11">0.0225 -0.005 0.266078 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_12 -->
+    <link name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_12">
+      <inertial>
+        <pose>-0.266078 0.00170858 0.0225 0 0 0</pose>
+        <mass>0.0156134</mass>
+        <inertia>
+          <ixx>1.46079e-06</ixx>
+          <ixy>1.51401e-13</ixy>
+          <ixz>1.54033e-14</ixz>
+          <iyy>2.14416e-07</iyy>
+          <iyz>-2.78119e-29</iyz>
+          <izz>1.46079e-06</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_16 -->
+      <visual name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_16_visual_mesh_1">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_12">-0.266078 -0.005 0.0225 1.5708 1.83697e-16 -4.81146e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_16_collision_mesh_2">
+        <pose relative_to="hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a_12">-0.266078 -0.005 0.0225 1.5708 1.83697e-16 -4.81146e-29</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_head_bolt_grade_a___b_m8x1_25_x_25_x_22__af70aa9de627d14e08d4f1d32024151a.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70 -->
+    <link name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70">
+      <inertial>
+        <pose>0.0225 0.013424 -0.266078 0 0 0</pose>
+        <mass>0.0056582</mass>
+        <inertia>
+          <ixx>1.03159e-07</ixx>
+          <ixy>-2.72717e-14</ixy>
+          <ixz>-5.93009e-15</ixz>
+          <iyy>1.65156e-07</iyy>
+          <iyz>1.66991e-30</iyz>
+          <izz>1.03159e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_5 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_5_visual_mesh_1">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70">0.0225 0.0134 -0.266078 -1.5708 6.12323e-17 3.58732e-43</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_5_collision_mesh_2">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70">0.0225 0.0134 -0.266078 -1.5708 6.12323e-17 3.58732e-43</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_2 -->
+    <link name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_2">
+      <inertial>
+        <pose>0.266078 0.013424 0.0225 0 0 0</pose>
+        <mass>0.0056582</mass>
+        <inertia>
+          <ixx>1.03159e-07</ixx>
+          <ixy>-2.78346e-30</ixy>
+          <ixz>5.93009e-15</ixz>
+          <iyy>1.65156e-07</iyy>
+          <iyz>-2.72717e-14</iyz>
+          <izz>1.03159e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_6 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_6_visual_mesh_1">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_2">0.266078 0.0134 0.0225 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_6_collision_mesh_2">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_2">0.266078 0.0134 0.0225 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_3 -->
+    <link name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_3">
+      <inertial>
+        <pose>-0.0225 0.013424 0.266078 0 0 0</pose>
+        <mass>0.0056582</mass>
+        <inertia>
+          <ixx>1.03159e-07</ixx>
+          <ixy>2.72717e-14</ixy>
+          <ixz>-5.93009e-15</ixz>
+          <iyy>1.65156e-07</iyy>
+          <iyz>-5.00972e-30</iyz>
+          <izz>1.03159e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_7 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_7_visual_mesh_1">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_3">-0.0225 0.0134 0.266078 1.5708 -1.83697e-16 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_7_collision_mesh_2">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_3">-0.0225 0.0134 0.266078 1.5708 -1.83697e-16 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_4 -->
+    <link name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_4">
+      <inertial>
+        <pose>-0.0225 0.013424 -0.266078 0 0 0</pose>
+        <mass>0.0056582</mass>
+        <inertia>
+          <ixx>1.03159e-07</ixx>
+          <ixy>2.72717e-14</ixy>
+          <ixz>-5.93009e-15</ixz>
+          <iyy>1.65156e-07</iyy>
+          <iyz>-1.66991e-30</iyz>
+          <izz>1.03159e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_8 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_8_visual_mesh_1">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_4">-0.0225 0.0134 -0.266078 1.5708 -6.12323e-17 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_8_collision_mesh_2">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_4">-0.0225 0.0134 -0.266078 1.5708 -6.12323e-17 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_5 -->
+    <link name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_5">
+      <inertial>
+        <pose>0.266078 0.013424 -0.0225 0 0 0</pose>
+        <mass>0.0056582</mass>
+        <inertia>
+          <ixx>1.03159e-07</ixx>
+          <ixy>1.40343e-23</ixy>
+          <ixz>5.93009e-15</ixz>
+          <iyy>1.65156e-07</iyy>
+          <iyz>2.72717e-14</iyz>
+          <izz>1.03159e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_9 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_9_visual_mesh_1">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_5">0.266078 0.0134 -0.0225 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_9_collision_mesh_2">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_5">0.266078 0.0134 -0.0225 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_6 -->
+    <link name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_6">
+      <inertial>
+        <pose>0.0225 0.013424 0.266078 0 0 0</pose>
+        <mass>0.0056582</mass>
+        <inertia>
+          <ixx>1.03159e-07</ixx>
+          <ixy>-2.72717e-14</ixy>
+          <ixz>-5.93009e-15</ixz>
+          <iyy>1.65156e-07</iyy>
+          <iyz>5.00972e-30</iyz>
+          <izz>1.03159e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_10 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_10_visual_mesh_1">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_6">0.0225 0.0134 0.266078 -1.5708 1.83697e-16 -3.98273e-59</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_10_collision_mesh_2">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_6">0.0225 0.0134 0.266078 -1.5708 1.83697e-16 -3.98273e-59</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_7 -->
+    <link name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_7">
+      <inertial>
+        <pose>-0.0225 0.013424 -0.173078 0 0 0</pose>
+        <mass>0.0056582</mass>
+        <inertia>
+          <ixx>1.03159e-07</ixx>
+          <ixy>2.72717e-14</ixy>
+          <ixz>-5.93009e-15</ixz>
+          <iyy>1.65156e-07</iyy>
+          <iyz>-1.66991e-30</iyz>
+          <izz>1.03159e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_11 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_11_visual_mesh_1">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_7">-0.0225 0.0134 -0.173078 1.5708 -6.12323e-17 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_11_collision_mesh_2">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_7">-0.0225 0.0134 -0.173078 1.5708 -6.12323e-17 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_8 -->
+    <link name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_8">
+      <inertial>
+        <pose>0.173078 0.013424 -0.0225 0 0 0</pose>
+        <mass>0.0056582</mass>
+        <inertia>
+          <ixx>1.03159e-07</ixx>
+          <ixy>1.40343e-23</ixy>
+          <ixz>5.93009e-15</ixz>
+          <iyy>1.65156e-07</iyy>
+          <iyz>2.72717e-14</iyz>
+          <izz>1.03159e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_12 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_12_visual_mesh_1">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_8">0.173078 0.0134 -0.0225 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_12_collision_mesh_2">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_8">0.173078 0.0134 -0.0225 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_9 -->
+    <link name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_9">
+      <inertial>
+        <pose>0.0225 0.013424 0.173078 0 0 0</pose>
+        <mass>0.0056582</mass>
+        <inertia>
+          <ixx>1.03159e-07</ixx>
+          <ixy>-2.72717e-14</ixy>
+          <ixz>-5.93009e-15</ixz>
+          <iyy>1.65156e-07</iyy>
+          <iyz>5.00972e-30</iyz>
+          <izz>1.03159e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_13 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_13_visual_mesh_1">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_9">0.0225 0.0134 0.173078 -1.5708 1.83697e-16 -3.98273e-59</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_13_collision_mesh_2">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_9">0.0225 0.0134 0.173078 -1.5708 1.83697e-16 -3.98273e-59</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_10 -->
+    <link name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_10">
+      <inertial>
+        <pose>0.0225 0.013424 -0.173078 0 0 0</pose>
+        <mass>0.0056582</mass>
+        <inertia>
+          <ixx>1.03159e-07</ixx>
+          <ixy>2.72717e-14</ixy>
+          <ixz>-5.93009e-15</ixz>
+          <iyy>1.65156e-07</iyy>
+          <iyz>-1.66991e-30</iyz>
+          <izz>1.03159e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_14 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_14_visual_mesh_1">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_10">0.0225 0.0134 -0.173078 1.5708 -6.12323e-17 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_14_collision_mesh_2">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_10">0.0225 0.0134 -0.173078 1.5708 -6.12323e-17 3.14159</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_11 -->
+    <link name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_11">
+      <inertial>
+        <pose>0.173078 0.013424 0.0225 0 0 0</pose>
+        <mass>0.0056582</mass>
+        <inertia>
+          <ixx>1.03159e-07</ixx>
+          <ixy>1.40343e-23</ixy>
+          <ixz>5.93009e-15</ixz>
+          <iyy>1.65156e-07</iyy>
+          <iyz>2.72717e-14</iyz>
+          <izz>1.03159e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_15 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_15_visual_mesh_1">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_11">0.173078 0.0134 0.0225 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_15_collision_mesh_2">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_11">0.173078 0.0134 0.0225 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_12 -->
+    <link name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_12">
+      <inertial>
+        <pose>-0.0225 0.013424 0.173078 0 0 0</pose>
+        <mass>0.0056582</mass>
+        <inertia>
+          <ixx>1.03159e-07</ixx>
+          <ixy>-2.72717e-14</ixy>
+          <ixz>-5.93009e-15</ixz>
+          <iyy>1.65156e-07</iyy>
+          <iyz>5.00972e-30</iyz>
+          <izz>1.03159e-07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_16 -->
+      <visual name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_16_visual_mesh_1">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_12">-0.0225 0.0134 0.173078 -1.5708 1.83697e-16 -3.98273e-59</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.603922 0.647059 0.686275 1</ambient>
+          <diffuse>0.603922 0.647059 0.686275 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_16_collision_mesh_2">
+        <pose relative_to="hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70_12">-0.0225 0.0134 0.173078 -1.5708 1.83697e-16 -3.98273e-59</pose>
+        <geometry>
+          <mesh>
+            <uri>model://base_plate/assets/hex_nut_grade_a___b_m8x1_25__3430b5bbd516b81b52e50f5ca3422a70.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
