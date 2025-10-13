@@ -11,7 +11,27 @@
     <include>
       <uri>file://model/robot.sdf</uri>
       <name>robot</name>
-      <pose>0 0 1 0 0 0</pose> <!-- slightly above ground -->
+      <pose>0 0 1 -1.5708 0 0</pose> <!-- slightly above ground -->
     </include>
+
+    <light name="sun" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>1.0 1.0 0.9 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.8 1</background>
+      <shadows>true</shadows>
+    </scene>
   </world>
 </sdf>
