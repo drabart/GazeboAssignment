@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/b36124d5af2122816059b47e/w/a841b9e213fb45aaaf3ccb90/e/a48504d4e6ba8d85418e90eb -->
+<robot name="Qbert">
+  <!-- Link base -->
+  <link name="base">
+    <inertial>
+      <origin xyz="0.35 -0.45 0.148049" rpy="0 0 0"/>
+      <mass value="87.2967"/>
+      <inertia ixx="16.0836" ixy="7.94512e-15" ixz="-4.63157e-16" iyy="5.07096" iyz="3.40439e-15" izz="19.9385"/>
+    </inertial>
+    <!-- Part base_parts -->
+    <visual>
+      <origin xyz="0.35 -0.45 0.148049" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/merged/base_visual.stl"/>
+      </geometry>
+      <material name="base_parts_material">
+        <color rgba="0.439216 0.47451 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.35 -0.45 0.148049" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/merged/base_collision.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_1 -->
+  <link name="part_1">
+    <inertial>
+      <origin xyz="-0.3 -0.0537638 2.77556e-17" rpy="0 0 0"/>
+      <mass value="743.041"/>
+      <inertia ixx="21.4219" ixy="2.27533e-15" ixz="1.47955e-15" iyy="63.2531" iyz="8.51099e-16" izz="64.8606"/>
+    </inertial>
+    <!-- Part part_1_parts -->
+    <visual>
+      <origin xyz="-0.3 -0.0537638 0" rpy="1.5708 -2.19831e-30 -1.36877e-27"/>
+      <geometry>
+        <mesh filename="package://assets/merged/part_1_visual.stl"/>
+      </geometry>
+      <material name="part_1_parts_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.3 -0.0537638 0" rpy="1.5708 -2.19831e-30 -1.36877e-27"/>
+      <geometry>
+        <mesh filename="package://assets/merged/part_1_collision.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link drum_assembly -->
+  <link name="drum_assembly">
+    <inertial>
+      <origin xyz="-9.68121e-17 -1.38104e-16 0.0677099" rpy="0 0 0"/>
+      <mass value="168.749"/>
+      <inertia ixx="14.537" ixy="-6.21542e-16" ixz="-1.75415e-16" iyy="14.537" iyz="-1.73853e-15" izz="12.1567"/>
+    </inertial>
+    <!-- Part drum_assembly_parts -->
+    <visual>
+      <origin xyz="3.33067e-16 -9.99201e-16 0.0677099" rpy="1.5708 -3.86432e-18 2.98398"/>
+      <geometry>
+        <mesh filename="package://assets/merged/drum_assembly_visual.stl"/>
+      </geometry>
+      <material name="drum_assembly_parts_material">
+        <color rgba="0.899365 0.679349 0.0913932 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="3.33067e-16 -9.99201e-16 0.0677099" rpy="1.5708 -3.86432e-18 2.98398"/>
+      <geometry>
+        <mesh filename="package://assets/merged/drum_assembly_collision.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame camera (dummy link + fixed joint) -->
+  <link name="camera">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="camera_frame" type="fixed">
+    <origin xyz="-0.127664 0.127727 0.345195" rpy="1.46442 2.59821e-16 0.785398"/>
+    <parent link="drum_assembly"/>
+    <child link="camera"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from part_1 to drum_assembly -->
+  <joint name="J2Rotation" type="revolute">
+    <origin xyz="-0.3 -0.38 -1.66533e-16" rpy="1.01309e-16 -2.0014e-17 -2.98398"/>
+    <parent link="part_1"/>
+    <child link="drum_assembly"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from base to part_1 -->
+  <joint name="J1Linear" type="prismatic">
+    <origin xyz="0.65 -0.45 0.17" rpy="-1.5708 1.36877e-27 -2.19831e-30"/>
+    <parent link="base"/>
+    <child link="part_1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.225" upper="0.225"/>
+  </joint>
+</robot>
