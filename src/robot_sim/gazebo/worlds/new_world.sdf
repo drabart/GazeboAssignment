@@ -78,7 +78,7 @@
 
     <model name="base_plate">
       <self_collide>true</self_collide>
-      <pose>0 0 0.35 0 0 0</pose>
+      <pose>0 0 0.35 -1.570796 0 0</pose>
       <include merge="true">
         <uri>package://model_description/models/base_plate</uri>
       </include>
