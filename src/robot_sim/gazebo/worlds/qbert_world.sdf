@@ -26,14 +26,6 @@
       filename="gz-sim-user-commands-system"
       name="gz::sim::systems::UserCommands">
     </plugin>
-    <plugin
-      filename="BasicSystem"
-      name="gazebo::BasicSystem">
-    </plugin>
-    <plugin
-      filename="FullSystem"
-      name="gazebo::FullSystem">
-    </plugin>
 
     <light name="sun" type="directional">
       <cast_shadows>true</cast_shadows>
@@ -75,28 +67,5 @@
         </visual>
       </link>
     </model>
-
-    <model name="qbert">
-      <self_collide>true</self_collide>
-      <pose>0 0 0 0 0 0</pose>
-      <include merge="true">
-        <uri>package://model_description/models/Qbert</uri>
-      </include>
-
-      <plugin
-        filename="gz-sim-joint-state-publisher-system"
-        name="gz::sim::systems::JointStatePublisher">
-      </plugin>
-
-      <plugin
-        filename="gz-sim-pose-publisher-system"
-        name="gz::sim::systems::PosePublisher">
-        <publish_link_pose>true</publish_link_pose>
-        <use_pose_vector_msg>true</use_pose_vector_msg>
-        <static_publisher>true</static_publisher>
-        <static_update_frequency>1</static_update_frequency>
-      </plugin>
-    </model>
-
   </world>
 </sdf>

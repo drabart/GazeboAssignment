@@ -2,6 +2,27 @@
 <!-- Generated using onshape-to-robot -->
 <!-- Onshape https://cad.onshape.com/documents/b36124d5af2122816059b47e/w/a841b9e213fb45aaaf3ccb90/e/a48504d4e6ba8d85418e90eb -->
 <robot name="Qbert">
+  <ros2_control name="MyRobot" type="position_controllers/JointGroupPositionController">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+    <joint name="J2Rotation">
+      <command_interface name="position">
+        <param name="min">-3.1415</param>
+        <param name="max">3.1415</param>
+      </command_interface>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+  </ros2_control>
+  <gazebo>
+    <plugin filename="libgz_ros2_control-system.so" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>/home/drabart/Documents/gazebo/assignment/src/robot_sim/model_description/config/qbert_controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
   <!-- Link base -->
   <link name="base">
     <inertial>
@@ -106,6 +127,7 @@
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
+
   <!-- Joint from base to part_1 -->
   <joint name="J1Linear" type="prismatic">
     <origin xyz="0.65 -0.45 0.17" rpy="-1.5708 1.36877e-27 -2.19831e-30"/>
