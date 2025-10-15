@@ -6,7 +6,7 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
 
 from launch_ros.actions import Node
 
@@ -24,10 +24,13 @@ def generate_launch_description():
         os.environ.get('GZ_SIM_RESOURCE_PATH', '') + ':' + model_path
     )
 
-    # Load the SDF file from "description" package
-    sdf_file = os.path.join(pkg_project_description, 'models', 'Qbert', 'qbert.sdf')
-    with open(sdf_file, 'r') as infp:
-        robot_desc = infp.read()
+    # Load the SDF or URDF file from "description" package
+    # sdf_file = os.path.join(pkg_project_description, 'models', 'Qbert', 'qbert.sdf')
+    # with open(sdf_file, 'r') as infp:
+    #     robot_desc = infp.read()
+
+    urdf_file = os.path.join(pkg_project_description, 'models', 'Qbert', 'qbert.urdf')
+    robot_desc = Command(['xacro ', urdf_file])
 
     # Launch Gazebo with your custom world
     gz_sim = IncludeLaunchDescription(
@@ -41,7 +44,7 @@ def generate_launch_description():
     )
 
     # Publish robot state
-    robot_state_publisher = Node(
+    robot_state = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         name='robot_state_publisher',
@@ -52,11 +55,25 @@ def generate_launch_description():
         ]
     )
 
+    static_tf = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_tf_odom_base',
+        arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base'],
+        output='screen'
+    )
+
+    joint_state = Node(
+        package='joint_state_publisher',
+        executable='joint_state_publisher',
+        name='joint_state_publisher',
+    )
+
     # RViz (disabled by default)
     rviz = Node(
         package='rviz2',
         executable='rviz2',
-        arguments=['-d', os.path.join(pkg_project_bringup, 'config', 'diff_drive.rviz')],
+        arguments=['-d', os.path.join(pkg_project_bringup, 'config', 'qbert.rviz')],
         condition=IfCondition(LaunchConfiguration('rviz'))
     )
 
@@ -65,10 +82,16 @@ def generate_launch_description():
         package='ros_gz_bridge',
         executable='parameter_bridge',
         parameters=[{
-            'config_file': os.path.join(pkg_project_bringup, 'config', 'ros_gz_example_bridge.yaml'),
+            'config_file': os.path.join(pkg_project_bringup, 'config', 'ros_gz_bridge.yaml'),
             'qos_overrides./tf_static.publisher.durability': 'transient_local',
         }],
         output='screen'
+    )
+
+    image_bridge = Node(
+        package='ros_gz_image',
+        executable='image_bridge',
+        arguments=["/camera/image_raw"]
     )
 
     return LaunchDescription([
@@ -79,6 +102,9 @@ def generate_launch_description():
             description='Open RViz.'
         ),
         bridge,
-        robot_state_publisher,
+        image_bridge,
+        robot_state,
+        joint_state,
+        static_tf,
         rviz,
     ])

@@ -13,7 +13,7 @@
     <visual>
       <origin xyz="0.35 -0.45 0.148049" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/merged/base_visual.stl"/>
+        <mesh filename="package://model_description/models/Qbert/assets/merged/base_visual.stl"/>
       </geometry>
       <material name="base_parts_material">
         <color rgba="0.439216 0.47451 0.501961 1"/>
@@ -22,7 +22,7 @@
     <collision>
       <origin xyz="0.35 -0.45 0.148049" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/merged/base_collision.stl"/>
+        <mesh filename="package://model_description/models/Qbert/assets/merged/base_collision.stl"/>
       </geometry>
     </collision>
   </link>
@@ -37,7 +37,7 @@
     <visual>
       <origin xyz="-0.3 -0.0537638 0" rpy="1.5708 -2.19831e-30 -1.36877e-27"/>
       <geometry>
-        <mesh filename="package://assets/merged/part_1_visual.stl"/>
+        <mesh filename="package://model_description/models/Qbert/assets/merged/part_1_visual.stl"/>
       </geometry>
       <material name="part_1_parts_material">
         <color rgba="0.231373 0.380392 0.705882 1"/>
@@ -46,7 +46,7 @@
     <collision>
       <origin xyz="-0.3 -0.0537638 0" rpy="1.5708 -2.19831e-30 -1.36877e-27"/>
       <geometry>
-        <mesh filename="package://assets/merged/part_1_collision.stl"/>
+        <mesh filename="package://model_description/models/Qbert/assets/merged/part_1_collision.stl"/>
       </geometry>
     </collision>
   </link>
@@ -61,7 +61,7 @@
     <visual>
       <origin xyz="3.33067e-16 -9.99201e-16 0.0677099" rpy="1.5708 -3.86432e-18 2.98398"/>
       <geometry>
-        <mesh filename="package://assets/merged/drum_assembly_visual.stl"/>
+        <mesh filename="package://model_description/models/Qbert/assets/merged/drum_assembly_visual.stl"/>
       </geometry>
       <material name="drum_assembly_parts_material">
         <color rgba="0.899365 0.679349 0.0913932 1"/>
@@ -70,25 +70,34 @@
     <collision>
       <origin xyz="3.33067e-16 -9.99201e-16 0.0677099" rpy="1.5708 -3.86432e-18 2.98398"/>
       <geometry>
-        <mesh filename="package://assets/merged/drum_assembly_collision.stl"/>
+        <mesh filename="package://model_description/models/Qbert/assets/merged/drum_assembly_collision.stl"/>
       </geometry>
     </collision>
   </link>
-  <!-- Frame camera (dummy link + fixed joint) -->
-  <link name="camera">
-    <origin xyz="0 0 0" rpy="0 -0 0"/>
+
+  <!-- camera -->
+  <joint name="camera_joint" type="fixed">
+    <origin xyz="-0.127664 0.127727 0.345195" rpy="1.46442 2.59821e-16 0.785398"/>
+    <parent link="drum_assembly"/>
+    <child link="camera_link"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="camera_link">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="1e-9"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
     </inertial>
   </link>
-  <joint name="camera_frame" type="fixed">
-    <origin xyz="-0.127664 0.127727 0.345195" rpy="1.46442 2.59821e-16 0.785398"/>
-    <parent link="drum_assembly"/>
-    <child link="camera"/>
-    <axis xyz="0 0 0"/>
+
+  <joint name="camera_optical_joint" type="fixed">
+    <parent link="camera_link"/>
+    <child link="camera_link_optical"/>
+    <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
   </joint>
+  <link name="camera_link_optical"></link>
+
   <!-- Joint from part_1 to drum_assembly -->
   <joint name="J2Rotation" type="revolute">
     <origin xyz="-0.3 -0.38 -1.66533e-16" rpy="1.01309e-16 -2.0014e-17 -2.98398"/>
@@ -105,4 +114,27 @@
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-0.225" upper="0.225"/>
   </joint>
+
+  <gazebo reference="camera_link">
+    <sensor name="camera" type="camera">
+      <pose> 0 0 0 0 0 0 </pose>
+      <visualize>true</visualize>
+      <update_rate>30</update_rate>
+      <camera>
+        <camera_info_topic>camera/camera_info</camera_info_topic>
+        <horizontal_fov>1.089</horizontal_fov>
+        <image>
+          <format>R8G8B8</format>
+          <width>640</width>
+          <height>480</height>
+        </image>
+        <clip>
+          <near>0.05</near>
+          <far>8.0</far>
+        </clip>
+      </camera>
+      <topic>camera/image_raw</topic>
+      <gz_frame_id>camera_link_optical</gz_frame_id>
+    </sensor>
+  </gazebo>
 </robot>
