@@ -80,7 +80,7 @@
       <self_collide>true</self_collide>
       <pose>0 0 0 0 0 0</pose>
       <include merge="true">
-        <uri>package://model_description/models/Qbert</uri>
+        <uri>package://model_description/urdf</uri>
       </include>
 
       <plugin

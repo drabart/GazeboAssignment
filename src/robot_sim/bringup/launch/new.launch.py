@@ -6,7 +6,7 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command, FileContent
 
 from launch_ros.actions import Node
 
@@ -29,8 +29,8 @@ def generate_launch_description():
     # with open(sdf_file, 'r') as infp:
     #     robot_desc = infp.read()
 
-    urdf_file = os.path.join(pkg_project_description, 'models', 'Qbert', 'qbert.urdf')
-    robot_desc = Command(['xacro ', urdf_file])
+    urdf_file = os.path.join(pkg_project_bringup, 'config', 'qbert.urdf')
+    urdf = FileContent(urdf_file)
 
     # Launch Gazebo with your custom world
     gz_sim = IncludeLaunchDescription(
@@ -51,7 +51,7 @@ def generate_launch_description():
         output='both',
         parameters=[
             {'use_sim_time': True},
-            {'robot_description': robot_desc},
+            {'robot_description': Command(['xacro ', urdf_file])}  # Process URDF with xacro
         ]
     )
 
@@ -73,19 +73,19 @@ def generate_launch_description():
     rviz = Node(
         package='rviz2',
         executable='rviz2',
-        arguments=['-d', os.path.join(pkg_project_bringup, 'config', 'qbert.rviz')],
+        arguments=['-d', os.path.join(pkg_project_description, 'rviz', 'qbert.rviz')],
         parameters=[{
             "use_sim_time": True,
         }],
         condition=IfCondition(LaunchConfiguration('rviz'))
     )
-
+    
     # Bridge between ROS and Gazebo
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
         parameters=[{
-            'config_file': os.path.join(pkg_project_bringup, 'config', 'ros_gz_bridge.yaml'),
+            'config_file': os.path.join(pkg_project_gazebo, 'config', 'ros_gz_bridge.yaml'),
             'qos_overrides./tf_static.publisher.durability': 'transient_local',
         }],
         output='screen'

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Qbert">
+    <!-- Import qbert urdf file -->
+    <xacro:include filename="$(find model_description)/urdf/qbert.urdf" />
+
+    <!-- Import control_xacro -->
+    <!-- <xacro:include filename="qbert_ros2_control.xacro" /> -->
+    <!-- <xacro:qbert_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)" hardware_type="fake_system"/> -->
+</robot>

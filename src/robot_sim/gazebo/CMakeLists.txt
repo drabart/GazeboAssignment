@@ -76,8 +76,10 @@ install(
 # will be copied to the 'share/gazebo/worlds'
 # subfolder of the installation directory.
 install(
-  DIRECTORY worlds/
-  DESTINATION share/${PROJECT_NAME}/worlds
+  DIRECTORY 
+  worlds 
+  config 
+  DESTINATION share/${PROJECT_NAME}
 )
 
 

@@ -16,8 +16,9 @@ install(
 # Install project configuration files
 install(
   DIRECTORY
-    config/
-  DESTINATION share/${PROJECT_NAME}/config
+    config
+    launch
+  DESTINATION share/${PROJECT_NAME}
 )
 
 if(BUILD_TESTING)
