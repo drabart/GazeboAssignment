@@ -58,8 +58,8 @@ def generate_launch_description():
     static_tf = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
-        name='static_tf_odom_base',
-        arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base'],
+        name='static_tf_world_base',
+        arguments=['0', '0', '0', '0', '0', '0', 'world', 'base'],
         output='screen'
     )
 
@@ -74,6 +74,9 @@ def generate_launch_description():
         package='rviz2',
         executable='rviz2',
         arguments=['-d', os.path.join(pkg_project_bringup, 'config', 'qbert.rviz')],
+        parameters=[{
+            "use_sim_time": True,
+        }],
         condition=IfCondition(LaunchConfiguration('rviz'))
     )
 
@@ -88,12 +91,6 @@ def generate_launch_description():
         output='screen'
     )
 
-    image_bridge = Node(
-        package='ros_gz_image',
-        executable='image_bridge',
-        arguments=["/camera/image_raw"]
-    )
-
     return LaunchDescription([
         gz_sim,
         DeclareLaunchArgument(
@@ -102,7 +99,6 @@ def generate_launch_description():
             description='Open RViz.'
         ),
         bridge,
-        image_bridge,
         robot_state,
         joint_state,
         static_tf,

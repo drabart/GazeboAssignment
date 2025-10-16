@@ -126,13 +126,17 @@
     </link>
 
     <joint name="camera_joint" type="fixed">
-      <pose>-0.127664 0.127727 0.345195 1.46442 0 0.785398</pose>
+      <pose relative_to="drum_assembly">-0.127664 0.127727 0.345195 1.46442 0 0.785398</pose>
       <parent>drum_assembly</parent>
       <child>camera_link</child>
     </joint>
+    <joint name="camera_optical_joint" type="fixed">
+        <parent>camera_link</parent>
+        <child>camera_optical_link</child>
+    </joint>
 
     <link name="camera_link">
-      <pose>0 0 0 0 0 0</pose>
+      <pose relative_to="camera_joint">0 0 0 0 0 0</pose>
       <sensor name="camera" type="camera">
         <pose>0 0 0 0 0 0</pose>
         <camera>
@@ -151,6 +155,9 @@
         <update_rate>30</update_rate>
         <visualize>true</visualize>
       </sensor>
+    </link>
+    <link name="camera_optical_link">
+        <pose relative_to="camera_link">0 0 0 -1.5708 0 -1.5708</pose>
     </link>
 
     <!-- Joint from part_1 to drum_assembly -->

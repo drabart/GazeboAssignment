@@ -93,10 +93,10 @@
 
   <joint name="camera_optical_joint" type="fixed">
     <parent link="camera_link"/>
-    <child link="camera_link_optical"/>
+    <child link="camera_optical_link"/>
     <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
   </joint>
-  <link name="camera_link_optical"></link>
+  <link name="camera_optical_link"></link>
 
   <!-- Joint from part_1 to drum_assembly -->
   <joint name="J2Rotation" type="revolute">
@@ -134,7 +134,7 @@
         </clip>
       </camera>
       <topic>camera/image_raw</topic>
-      <gz_frame_id>camera_link_optical</gz_frame_id>
+      <gz_frame_id>camera_optical_link</gz_frame_id>
     </sensor>
   </gazebo>
 </robot>
