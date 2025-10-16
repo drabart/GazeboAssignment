@@ -17,17 +17,10 @@ find_package(gz-common5 REQUIRED COMPONENTS profiler)
 set(GZ_COMMON_VER ${gz-common5_VERSION_MAJOR})
 
 # Harmonic
-if("$ENV{GZ_VERSION}" STREQUAL "harmonic")
-  find_package(gz-sim8 REQUIRED)
-  set(GZ_SIM_VER ${gz-sim8_VERSION_MAJOR})
-  message(STATUS "Compiling against Gazebo Harmonic")
-# Default to Garden
-else()
-  find_package(gz-sim7 REQUIRED)
-  set(GZ_SIM_VER ${gz-sim7_VERSION_MAJOR})
-  message(STATUS "Compiling against Gazebo Garden")
-endif()
 
+find_package(gz-sim8 REQUIRED)
+set(GZ_SIM_VER ${gz-sim8_VERSION_MAJOR})
+message(STATUS "Compiling against Gazebo Harmonic")
 
 # Following 'add_library' directive defines a library target named 'BasicSystem'.
 # The 'SHARED' keyword indicates that a shared library should be compiled, and
