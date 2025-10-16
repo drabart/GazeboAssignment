@@ -1,9 +1,15 @@
-joint_state_broadcaster:
+controller_manager:
   ros__parameters:
-    type: joint_state_broadcaster/JointStateBroadcaster
+    update_rate: 10 # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    j2_position_controller:
+      type: forward_command_controller/ForwardCommandController
 
 j2_position_controller:
   ros__parameters:
-    type: position_controllers/JointGroupPositionController
     joints: 
       - J2Rotation
+    interface_name: position
