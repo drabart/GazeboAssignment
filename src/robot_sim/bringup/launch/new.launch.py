@@ -49,8 +49,8 @@ def generate_launch_description():
     static_tf_node = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
-        name='static_tf_odom_base',
-        arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base'],
+        name='static_tf_world_base',
+        arguments=['0', '0', '0', '0', '0', '0', 'world', 'base'],
         output='screen'
     )
     joint_state_node = Node(
