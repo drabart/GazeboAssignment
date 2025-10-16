@@ -17,11 +17,6 @@ def generate_launch_description():
     pkg_project_description = get_package_share_directory('model_description')
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
-    # Add Qbert assets folder to Gazebo search path
-    os.environ['GZ_SIM_RESOURCE_PATH'] = (
-        os.environ.get('GZ_SIM_RESOURCE_PATH', '') + ':' + model_path
-    )
-
     urdf_file = os.path.join(pkg_project_description, 'models', 'Qbert', 'qbert.urdf')
     robot_desc = Command(['xacro ', urdf_file])
 
@@ -83,28 +78,6 @@ def generate_launch_description():
         arguments=["j2_position_controller", "--param-file", ros2_control_path],
     )
 
-    static_tf = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='static_tf_world_base',
-        arguments=['0', '0', '0', '0', '0', '0', 'world', 'base'],
-        output='screen'
-    )
-
-    joint_state = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        name='joint_state_publisher',
-    )
-
-    static_tf = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='static_tf_world_base',
-        arguments=['0', '0', '0', '0', '0', '0', 'world', 'base'],
-        output='screen'
-    )
-
     # Spawn robot immediately
     gazebo_spawn_entity = Node(
         package='ros_gz_sim',
@@ -116,7 +89,6 @@ def generate_launch_description():
         ],
         output='screen'
     )
-
 
     # Bridge between ROS and Gazebo
     gazebo_bridge_node = Node(
